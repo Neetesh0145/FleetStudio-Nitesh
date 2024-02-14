@@ -1,0 +1,17 @@
+Spring Boot Project
+
+In memory Database : H2 db
+
+Imported data.json using data intializer, and kept data.json file in resource folder.
+
+
+
+API:
+
+API URL : http://localhost:8085/api/suggest?q={name},{statecode}
+
+API Method : GET
+
+API Query Param : q =
+
+API Authentication : No Auth
