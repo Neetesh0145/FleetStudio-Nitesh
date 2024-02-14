@@ -20,6 +20,7 @@ public class CountyController {
     @GetMapping("/suggest")
     public ResponseEntity<List<County>> suggestCounties(@RequestParam("q") String query) {
         List<County> counties = countyService.suggestCounties(query);
-        return ResponseEntity.ok(counties.subList(0, Math.min(5, counties.size())));
+        //return ResponseEntity.ok(counties.subList(0, Math.min(5, counties.size())));
+        return ResponseEntity.ok(counties);
     }
 }
